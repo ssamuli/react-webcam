@@ -126,6 +126,9 @@ export default class Webcam extends Component {
       const constraints = {
         video: {
           optional: [{ sourceId: videoSource }],
+          width: { ideal: 3840  },
+          height: { ideal: 2160 },
+          frameRate: { ideal: 60 }
         },
       };
 
